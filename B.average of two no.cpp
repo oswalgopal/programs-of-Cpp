@@ -13,3 +13,6 @@ int main(){
     cout<<"average of the given no is "<<average;    //printing the average of the two no
     return 0;
 }
+
+
+// >> :- it is an input statement which causes the program to wait for the uesr to type in a input. It is also known as extraction or get from operator.
