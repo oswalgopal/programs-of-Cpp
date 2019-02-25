@@ -18,10 +18,11 @@
 using namespace std;
 int main()
 {
-    int arr[10],i=0,j=0,max=0 , min=0,size=3;
+    int arr[100],i=0,j=0,max=0 , min=0,size;
     long int sum=0;
     float average=0;
-    
+    cout<<"Enter the size of the array ";
+        cin>>size;
     
     for(i=0;i<size;i++)
     {
