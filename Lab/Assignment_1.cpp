@@ -18,28 +18,35 @@
 using namespace std;
 int main()
 {
-    int arr[10],i,j,sum=0,max , min ;
+    int arr[10],i=0,j=0,max=0 , min=0,size=3;
+    long int sum=0;
     float average=0;
     
     
-    for(i=0;i<10;i++)
+    for(i=0;i<size;i++)
     {
         cout<<"Enter the number for "<<i<<" position ";
         cin>>arr[i];
+        while(arr[i]>=32767)
+        {
+            cout<<"enter the number in the range of int \n";
+            cout<<"Enter the number  for "<<i<<" position";
+            cin>>arr[i];
+        }
     }
     
     
-    for(j=0;j<10;j++)
+    for(j=0;j<size;j++)
     {
         sum+=arr[j];       // sum done 
     }
     
-    average =  sum / 5.0;   // average done 
+    average = (float) sum / size;   // average done 
     
     
     // maximum and minimum 
     
-    for(i=0;i<10;i++)
+    for(i=0;i<size;i++)
     {
         if(i==0)
              {
@@ -66,9 +73,9 @@ int main()
     //output 
     cout<<"The elements of array are "<<"\n";
     cout<<"[";
-    for(i=0;i<10;i++)
+    for(i=0;i<size;i++)
     {
-      cout<<"["<<i <<" = "<<arr[i]<<"]";    
+      cout<<"["<<i <<" = "<<arr[i]<<"] , ";    
     }
     cout<<"]";
     
