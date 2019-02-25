@@ -24,7 +24,7 @@ class Student {
 
 int main()
 {   
-    Student p;
+    Obj Student p;
     p.GetData();
     p.ShowData();
     p.CalculateTotal();
