@@ -1,0 +1,59 @@
+//Developer : Gopal Oswal  
+//Date :11-03-2019
+//Topic :Function Overloading
+
+
+#include<iostream>
+using namespace std;
+
+class addition{
+    public:   
+        
+        int Add(int x ,int y)
+        {
+            return x+y;
+        }
+        int Add(int x ,int y, int z )
+        {
+            return x+y+z;
+        }
+        int Add(int w ,int x ,int y,int z)
+        {   
+            return w+x+y+z;
+
+        }    
+};
+
+int main()
+{
+    int no,num1,num2,num3,num4;
+    addition a;
+
+        cout<<"enter the number of digits you want to enter";
+        cin>>no;
+    if(no==2)
+    {
+        cout<<"enter the 2 digits for sum";
+        cin>>num1>>num2;
+        cout<<a.Add(num1,num2);
+    }
+    else if (no==3)
+    {
+        cout<<"enter the 3  digits for sum";   
+        cin>>num1>>num2>>num3;
+        cout<<a.Add(num1,num2,num3);
+    }
+    else if(no==4)
+    {
+        cout<<"enter the 4 digits for sum";
+        cin>>num1>>num2>>num3>>num4;
+        cout<<a.Add(num1,num2,num3,num4);
+    }
+    else {
+        cout<<"wrong choice";
+    }
+    return 0;
+}                                               
+
+
+
